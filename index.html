@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DreamCode - Discord Serwer</title>
+  <title>FreezeCode - Discord Serwer</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <nav id="navbar">
+
+  <!-- Animacja startowa -->
+  <div id="loader">
+    <pre id="consoleOutput"></pre>
+  </div>
+
+  <nav id="navbar" class="hidden">
     <div class="container nav-container">
-      <div class="logo">DreamCode</div>
+      <div class="logo">FreezeCode</div>
       <ul class="nav-links">
         <li><a href="#home" class="nav-link active">Strona główna</a></li>
         <li><a href="#staff" class="nav-link">Administracja</a></li>
@@ -23,7 +29,7 @@
 
   <section id="home" class="section hero">
     <div class="container hero-content">
-      <h1>Witaj na DreamCode</h1>
+      <h1>Witaj na FreezeCode</h1>
       <p>Dołącz do naszej społeczności i twórz niesamowite projekty razem z nami.</p>
       <p class="member-count">🟢 Osób online: <span id="memberCount">...</span></p>
       <div class="buttons">
@@ -68,14 +74,14 @@
     <div class="container">
       <h2>Kontakt</h2>
       <p>Masz pytania? Napisz do nas!</p>
-      <p>Email: kontakt@dreamcode.cc</p>
+      <p>Email: kontakt@freeze.cc</p>
       <p>Discord: <a href="https://discord.gg/TWOJ_KOD" target="_blank">https://discord.gg/TWOJ_KOD</a></p>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 DreamCode. Wszelkie prawa zastrzeżone.</p>
+      <p>&copy; 2025 FreezeCode. Wszelkie prawa zastrzeżone.</p>
     </div>
   </footer>
 
