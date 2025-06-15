@@ -2,42 +2,68 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Discord Serwer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discord Serwer - DreamCode Style</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>🌌 Nazwa Twojego Serwera</h1>
-    <p>Dołącz do naszej społeczności już dziś!</p>
-    <a href="https://discord.gg/TWOJ_KOD" class="button">Dołącz na Discord</a>
-    <a href="https://forms.gle/TWOJ_LINK" class="button">Rekrutacja</a>
-    <p class="member-count">🟢 Osób online: <span id="memberCount">...</span></p>
-  </header>
+  <nav>
+    <div class="logo">🌌 DreamCode</div>
+    <ul class="nav-links">
+      <li><a href="#" data-tab="home" class="active">Strona główna</a></li>
+      <li><a href="#" data-tab="staff">Administracja</a></li>
+      <li><a href="#" data-tab="rekrutacja">Rekrutacja</a></li>
+      <li><a href="#" data-tab="kontakt">Kontakt</a></li>
+    </ul>
+    <a href="https://discord.gg/TWOJ_KOD" target="_blank" class="btn-discord">Dołącz na Discord</a>
+  </nav>
 
-  <section class="staff">
-    <h2>👑 Administracja</h2>
-    <div class="staff-list">
-      <div class="member">
-        <img src="https://via.placeholder.com/100" alt="avatar" />
-        <h3>Kacper</h3>
-        <p class="role owner">Właściciel</p>
+  <main>
+    <section id="home" class="tab-content active">
+      <h1>Witamy na DreamCode!</h1>
+      <p>Dołącz do naszej społeczności i twórz z nami niesamowite projekty.</p>
+      <p class="member-count">🟢 Osób online: <span id="memberCount">...</span></p>
+      <a href="https://discord.gg/TWOJ_KOD" target="_blank" class="button">Dołącz na Discord</a>
+      <a href="#rekrutacja" class="button btn-secondary">Zobacz rekrutację</a>
+    </section>
+
+    <section id="staff" class="tab-content">
+      <h2>Administracja</h2>
+      <div class="staff-list">
+        <div class="member">
+          <img src="https://via.placeholder.com/120" alt="Kacper" />
+          <h3>Kacper</h3>
+          <p class="role owner">Właściciel</p>
+        </div>
+        <div class="member">
+          <img src="https://via.placeholder.com/120" alt="Martyna" />
+          <h3>Martyna</h3>
+          <p class="role admin">Administrator</p>
+        </div>
+        <div class="member">
+          <img src="https://via.placeholder.com/120" alt="Mikołaj" />
+          <h3>Mikołaj</h3>
+          <p class="role mod">Moderator</p>
+        </div>
       </div>
-      <div class="member">
-        <img src="https://via.placeholder.com/100" alt="avatar" />
-        <h3>Martyna</h3>
-        <p class="role admin">Administrator</p>
-      </div>
-      <div class="member">
-        <img src="https://via.placeholder.com/100" alt="avatar" />
-        <h3>Mikołaj</h3>
-        <p class="role mod">Moderator</p>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="rekrutacja" class="tab-content">
+      <h2>Rekrutacja</h2>
+      <p>Chcesz dołączyć do naszej ekipy? Wypełnij formularz:</p>
+      <a href="https://forms.gle/TWOJ_LINK" target="_blank" class="button">Formularz rekrutacyjny</a>
+    </section>
+
+    <section id="kontakt" class="tab-content">
+      <h2>Kontakt</h2>
+      <p>Masz pytania? Napisz do nas!</p>
+      <p>Email: kontakt@dreamcode.cc</p>
+      <p>Discord: <a href="https://discord.gg/TWOJ_KOD" target="_blank">https://discord.gg/TWOJ_KOD</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Nazwa Serwera. Wszelkie prawa zastrzeżone.</p>
+    <p>&copy; 2025 DreamCode. Wszelkie prawa zastrzeżone.</p>
   </footer>
 
   <script src="script.js"></script>
