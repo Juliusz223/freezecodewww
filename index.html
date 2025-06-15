@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serwer Discord</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discord Serwer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Witamy na naszym serwerze Discord!</h1>
-        <p>Dołącz do nas i bądź częścią społeczności!</p>
+  <header>
+    <h1>🌌 Nazwa Twojego Serwera</h1>
+    <p>Dołącz do naszej społeczności już dziś!</p>
+    <a href="https://discord.gg/TWOJ_KOD" class="button">Dołącz na Discord</a>
+    <a href="https://forms.gle/TWOJ_LINK" class="button">Rekrutacja</a>
+    <p class="member-count">🟢 Osób online: <span id="memberCount">...</span></p>
+  </header>
 
-        <div class="stats">
-            <p>👥 Liczba członków: <span id="memberCount">Ładowanie...</span></p>
-        </div>
-
-        <a href="https://discord.gg/TWÓJ_KOD" class="join-btn" target="_blank">Dołącz teraz</a>
+  <section class="staff">
+    <h2>👑 Administracja</h2>
+    <div class="staff-list">
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="avatar" />
+        <h3>Kacper</h3>
+        <p class="role owner">Właściciel</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="avatar" />
+        <h3>Martyna</h3>
+        <p class="role admin">Administrator</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="avatar" />
+        <h3>Mikołaj</h3>
+        <p class="role mod">Moderator</p>
+      </div>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Nazwa Serwera. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
