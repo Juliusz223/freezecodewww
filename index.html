@@ -3,67 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Discord Serwer - DreamCode Style</title>
+  <title>DreamCode - Discord Serwer</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <nav>
-    <div class="logo">🌌 DreamCode</div>
-    <ul class="nav-links">
-      <li><a href="#" data-tab="home" class="active">Strona główna</a></li>
-      <li><a href="#" data-tab="staff">Administracja</a></li>
-      <li><a href="#" data-tab="rekrutacja">Rekrutacja</a></li>
-      <li><a href="#" data-tab="kontakt">Kontakt</a></li>
-    </ul>
-    <a href="https://discord.gg/TWOJ_KOD" target="_blank" class="btn-discord">Dołącz na Discord</a>
+  <nav id="navbar">
+    <div class="container nav-container">
+      <div class="logo">DreamCode</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Strona główna</a></li>
+        <li><a href="#staff" class="nav-link">Administracja</a></li>
+        <li><a href="#rekrutacja" class="nav-link">Rekrutacja</a></li>
+        <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+      </ul>
+      <a href="https://discord.gg/TWOJ_KOD" target="_blank" class="btn-discord">Dołącz na Discord</a>
+    </div>
   </nav>
 
-  <main>
-    <section id="home" class="tab-content active">
-      <h1>Witamy na DreamCode!</h1>
-      <p>Dołącz do naszej społeczności i twórz z nami niesamowite projekty.</p>
+  <section id="home" class="section hero">
+    <div class="container hero-content">
+      <h1>Witaj na DreamCode</h1>
+      <p>Dołącz do naszej społeczności i twórz niesamowite projekty razem z nami.</p>
       <p class="member-count">🟢 Osób online: <span id="memberCount">...</span></p>
-      <a href="https://discord.gg/TWOJ_KOD" target="_blank" class="button">Dołącz na Discord</a>
-      <a href="#rekrutacja" class="button btn-secondary">Zobacz rekrutację</a>
-    </section>
+      <div class="buttons">
+        <a href="https://discord.gg/TWOJ_KOD" target="_blank" class="button primary">Dołącz na Discord</a>
+        <a href="#rekrutacja" class="button secondary">Rekrutacja</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="staff" class="tab-content">
+  <section id="staff" class="section staff">
+    <div class="container">
       <h2>Administracja</h2>
       <div class="staff-list">
         <div class="member">
-          <img src="https://via.placeholder.com/120" alt="Kacper" />
+          <img src="https://i.pravatar.cc/150?img=12" alt="Kacper" />
           <h3>Kacper</h3>
           <p class="role owner">Właściciel</p>
         </div>
         <div class="member">
-          <img src="https://via.placeholder.com/120" alt="Martyna" />
+          <img src="https://i.pravatar.cc/150?img=5" alt="Martyna" />
           <h3>Martyna</h3>
           <p class="role admin">Administrator</p>
         </div>
         <div class="member">
-          <img src="https://via.placeholder.com/120" alt="Mikołaj" />
+          <img src="https://i.pravatar.cc/150?img=3" alt="Mikołaj" />
           <h3>Mikołaj</h3>
           <p class="role mod">Moderator</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="rekrutacja" class="tab-content">
+  <section id="rekrutacja" class="section rekrutacja">
+    <div class="container">
       <h2>Rekrutacja</h2>
-      <p>Chcesz dołączyć do naszej ekipy? Wypełnij formularz:</p>
-      <a href="https://forms.gle/TWOJ_LINK" target="_blank" class="button">Formularz rekrutacyjny</a>
-    </section>
+      <p>Chcesz dołączyć do ekipy? Wypełnij formularz rekrutacyjny:</p>
+      <a href="https://forms.gle/TWOJ_LINK" target="_blank" class="button primary">Formularz rekrutacyjny</a>
+    </div>
+  </section>
 
-    <section id="kontakt" class="tab-content">
+  <section id="kontakt" class="section kontakt">
+    <div class="container">
       <h2>Kontakt</h2>
       <p>Masz pytania? Napisz do nas!</p>
       <p>Email: kontakt@dreamcode.cc</p>
       <p>Discord: <a href="https://discord.gg/TWOJ_KOD" target="_blank">https://discord.gg/TWOJ_KOD</a></p>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 DreamCode. Wszelkie prawa zastrzeżone.</p>
+    <div class="container">
+      <p>&copy; 2025 DreamCode. Wszelkie prawa zastrzeżone.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
